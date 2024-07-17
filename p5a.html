@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Fibonacci</title>
+    </head>
+    <body>
+        <center>
+            <script>
+                var n=prompt("Enter a positive number");
+                var n1=Number(n);
+                document.write("<h1>Fibonacci Series upto "+n1+" numbers </h1>");
+                if(n1>0){
+                    var num1=0,num2=1;
+                    if(n1==1){
+                        document.write(num1);
+                    }
+                    else{
+                        document.write(num1+"<br>");
+                        document.write(num2+"<br>");
+                        for(var i=3;i<=n1;i++){
+                            var num3=num1+num2;
+                            document.write(num3+"<br>");
+                            num1=num2;
+                            num2=num3;
+                        }
+                    }
+                }
+                else{
+                    document.write("Invalid Number");
+                }
+            </script>
+        </center>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<DOCTYPE! html>
+<head>
+<link rel="stylesheet" href="p6.css">
+<title>Program 6</title>
+</head>
+<body>
+<script>
+function myfunc(){
+	var a = document.getElementById("sbox1").value;
+	document.getElementById("sbox2").value=a;
+}
+</script>
+<h1>Enter The Country</h1>
+<form>
+Country:
+<select name="" id="sbox1" onclick="myfunc()" required>
+<option value=""></option>
+<option value="New Delhi">India</option>
+<option value="London">UK</option>
+<option value="Kathmandu">Nepal</option>
+<option value="Washington DC">USA</option>
+</select><br><br>
+Captal:
+<input type="text" id="sbox2">
+</form>
+</body>
+</html>
